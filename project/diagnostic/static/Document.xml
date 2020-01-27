@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document form="form2" parent="B19C3A2F4134DE174325837E00134354" response="true">  
+   <revisions>
+      <datetime>20190531T125249,08+03</datetime>
+      <datetime>20190531T125401,93+03</datetime>
+      <datetime>20190531T125548,92+03</datetime>
+   </revisions>   
+   
+   <item name="numCodeDoc">
+      <number>12</number>
+   </item>
+   <item name="ctxtSex">
+      <text>Мужчина</text>
+   </item>
+   <item name="device">
+      <text>Acusonic 2000</text>
+   </item>
+   <item name="ctxtOtd">
+      <text>Отделение покоя</text>
+   </item>
+   <item name="name">
+      <text>АБРАМОВ АРКАДИЙ НИКОЛАЕВИЧ (26.12.1991)</text>
+   </item>
+   <item name="Iss">
+      <text>ЭКГ\в кабинете</text>
+   </item>
+   <item name="description">
+      <text>ЭКГ в покое стандартная 12 отведений</text>
+   </item>
+   <item name="Podrazdel">
+      <text>Подразделение "№ 1 им. Баранова 123"</text>
+   </item>
+   <item name="ctxtOtdCode2">
+      <text>54</text>
+   </item>
+   <item name="ctxtPayDoctor2">
+      <text>Бородин Андрей Николаевич - Медицинский физик</text>
+   </item>
+   <item name="prMyDoctorCodeR2">
+      <text>2414</text>
+   </item>
+   <item name="conclusion">
+      <text>Патологий не выявлено, показатели в пределах нормы.</text>
+   </item>
+   <results>
+      <item name="bp_syst">
+         <text>123</text>
+      </item>
+      <item name="bp_diast">
+         <text>100</text>
+      </item>
+      <item name="heart_rate">
+         <text>90</text>
+      </item>
+   </results>
+   <item name="ctxtNameDocument">
+      <text>ЭКГ в покое стандартная 12 отведений (09.01.2019)</text>
+   </item>
+   <item name="cdatDateBound">
+      <datetime>1989.12.22</datetime>
+   </item>
+   <item name="date">
+      <text>15.05.2019T11:12:13</text>
+   </item>  
+</document>

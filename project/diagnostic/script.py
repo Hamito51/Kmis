@@ -1,8 +1,8 @@
-from lxml import etree, objectify
-import json
 import base64
+import json
 import hashlib
- 
+from lxml import etree, objectify
+
 
 # Получаем данные из файла Document.xml
 def parseXML(xmlFile):
@@ -44,7 +44,7 @@ def get_device_id(JSON_File, device_name):
 def make_b64_md5(image_file):
     with open(image_file, "rb") as image_file:
         image = image_file.read()
-    encoded_string = base64.b64encode(image)
+    encoded_string = base64.b64encode(image).decode()
     md5 = hashlib.md5(image).hexdigest()
     return encoded_string, md5
 

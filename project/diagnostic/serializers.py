@@ -1,6 +1,6 @@
+from datetime import datetime
 from rest_framework import serializers
 from .models import Diagnostic, Device, Results
-from datetime import datetime
 
 
 # Создаем Сериализаторы на основе наших моделей.
@@ -9,10 +9,12 @@ class DeviceSerializer(serializers.ModelSerializer):
 		model = Device
 		fields = ('device_name', 'device_id')
 
+
 class ResultsSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Results
 		fields = ('heart_rate', 'bp_syst', 'bp_diast')
+
 
 class DiagnosticSerializer(serializers.ModelSerializer):
 	device = DeviceSerializer(many=True)

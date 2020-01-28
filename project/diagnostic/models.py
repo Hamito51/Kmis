@@ -6,10 +6,12 @@ class Device(models.Model):
 	device_name = models.CharField(max_length=120)
 	device_id = models.IntegerField()
 
+
 class Results(models.Model):
 	heart_rate = models.IntegerField()
 	bp_syst = models.IntegerField()
 	bp_diast = models.IntegerField()
+
 
 class Diagnostic(models.Model):
 	name = models.CharField(max_length=120)
@@ -20,3 +22,4 @@ class Diagnostic(models.Model):
 	file = models.TextField()
 	file_md5 = models.TextField()
 	results = models.ManyToManyField(Results)
+

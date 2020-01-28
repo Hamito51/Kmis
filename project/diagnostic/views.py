@@ -40,6 +40,7 @@ def get_from_files():
 	instance.device.add(device_instance)
 	instance.results.add(results_instance)
 	instance.save() 
+	return instance
 
 
 # Создаем класс для отображения списка списка принятых пакетов данных инструментальная диагностика
@@ -55,7 +56,7 @@ class DiagnosticView(APIView):
 		key = (request.query_params.get('key'))
 		# Если, полученный параметр удовлетворяет условию, то вызываем парсер из скрипта и получаем данные
 		if key == 'yes':
-			get_from_files()
+			instance = get_from_files()
 			return Response({"success": "Diagnostic for '{}' created successfully".format(instance.name)})
 		else:
 			# При любом другом значении параметра получаем данные, отправленные через запрос
